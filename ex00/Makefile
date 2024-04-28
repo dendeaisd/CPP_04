@@ -6,14 +6,15 @@
 #    By: fvoicu <fvoicu@student.42heilbronn.de>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/28 19:58:43 by fvoicu            #+#    #+#              #
-#    Updated: 2024/04/28 20:52:50 by fvoicu           ###   ########.fr        #
+#    Updated: 2024/04/29 00:56:18 by fvoicu           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME			:= poly
 CC				:= c++
 FLAGS			:= -Wall -Wextra -Werror -std=c++98
-SRC				:= main.cpp Animal.cpp Cat.cpp Dog.cpp
+SRC				:= main.cpp Animal.cpp Cat.cpp \
+						 Dog.cpp WrongAnimal.cpp WrongCat.cpp
 OBJ				:= $(SRC:.cpp=.o)
 
 # Colors
