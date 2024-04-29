@@ -6,7 +6,7 @@
 /*   By: fvoicu <fvoicu@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/28 20:44:27 by fvoicu            #+#    #+#             */
-/*   Updated: 2024/04/28 20:58:29 by fvoicu           ###   ########.fr       */
+/*   Updated: 2024/04/29 18:39:29 by fvoicu           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,7 @@ Dog::~Dog() {
 }
 
 void Dog::makeSound() const {
-  std::cout << BLUE << "* bark bark🐶 *" 
+  system("say woof woof");
+  std::cout << BLUE << "* barks🐶 *" 
             << RESET << std::endl;
 }

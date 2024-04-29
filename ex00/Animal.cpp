@@ -6,7 +6,7 @@
 /*   By: fvoicu <fvoicu@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/28 20:10:50 by fvoicu            #+#    #+#             */
-/*   Updated: 2024/04/28 20:57:42 by fvoicu           ###   ########.fr       */
+/*   Updated: 2024/04/29 18:40:14 by fvoicu           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,6 +40,7 @@ std::string Animal::getType() const {
 }
 
 void Animal::makeSound() const {
-  std::cout << GREEN << "* animal sound🙊 *" 
+  system("say rooar");
+  std::cout << GREEN << "* random(not so random) animal sound🙊 *" 
             << RESET << std::endl;
 }

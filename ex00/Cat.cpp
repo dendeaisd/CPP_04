@@ -6,7 +6,7 @@
 /*   By: fvoicu <fvoicu@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/28 20:39:22 by fvoicu            #+#    #+#             */
-/*   Updated: 2024/04/28 20:58:12 by fvoicu           ###   ########.fr       */
+/*   Updated: 2024/04/29 18:39:41 by fvoicu           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,6 +37,7 @@ Cat::~Cat() {
 }
 
 void Cat::makeSound() const {
-  std::cout << PINK << "* meow meow🐱 *" 
+  system("say meow meow");
+  std::cout << PINK << "* meows🐱 *" 
             << RESET << std::endl;
 }

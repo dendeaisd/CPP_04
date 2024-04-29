@@ -6,7 +6,7 @@
 /*   By: fvoicu <fvoicu@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/28 20:20:04 by fvoicu            #+#    #+#             */
-/*   Updated: 2024/04/29 01:12:19 by fvoicu           ###   ########.fr       */
+/*   Updated: 2024/04/29 18:41:47 by fvoicu           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,35 +18,35 @@
 
 int main()
 {
-  std::cout << "\n----------------------------------------\n";
-  std::cout << "Testing the Animal class\n\n";
-  Animal a;
-  std::cout << "Type of animal: " << a.getType() << std::endl;
-  a.makeSound();
-  std::cout << "\n----------------------------------------\n";
-  std::cout << "Testing the Cat class\n\n";
-  Cat b;
-  std::cout << "Type of animal: " << b.getType() << std::endl;
-  b.makeSound();
-  std::cout << "\n----------------------------------------\n";
-  std::cout << "Testing the Dog class\n\n";
-  Dog c;
-  std::cout << "Type of animal: " << c.getType() << std::endl;
-  c.makeSound();
-  std::cout << std::endl;
+  // std::cout << "\n----------------------------------------\n";
+  // std::cout << "Testing the Animal class\n\n";
+  // Animal a;
+  // std::cout << "Type of animal: " << a.getType() << std::endl;
+  // a.makeSound();
+  // std::cout << "\n----------------------------------------\n";
+  // std::cout << "Testing the Cat class\n\n";
+  // Cat b;
+  // std::cout << "Type of animal: " << b.getType() << std::endl;
+  // b.makeSound();
+  // std::cout << "\n----------------------------------------\n";
+  // std::cout << "Testing the Dog class\n\n";
+  // Dog c;
+  // std::cout << "Type of animal: " << c.getType() << std::endl;
+  // c.makeSound();
+  // std::cout << std::endl;
 
   /*Subject tests*/
-  // const Animal* meta = new Animal();
-  // const Animal* j = new Dog();
-  // const Animal* i = new Cat();
-  // std::cout << j->getType() << " " << std::endl;
-  // std::cout << i->getType() << " " << std::endl;
-  // i->makeSound(); //will output the cat sound!
-  // j->makeSound();
-  // meta->makeSound();
-  // delete meta;
-  // delete j;
-  // delete i;
+  const Animal* meta = new Animal();
+  const Animal* j = new Dog();
+  const Animal* i = new Cat();
+  std::cout << j->getType() << " " << std::endl;
+  std::cout << i->getType() << " " << std::endl;
+  i->makeSound(); //will output the cat sound!
+  j->makeSound();
+  meta->makeSound();
+  delete meta;
+  delete j;
+  delete i;
 
   // /*Subject tests for Worng*/
   // const WrongAnimal* meta = new WrongAnimal();
