@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Brain.hpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fvoicu <fvoicu@student.42heilbronn.de>     +#+  +:+       +#+        */
+/*   By: fvoicu <fvoicu@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/29 01:20:07 by fvoicu            #+#    #+#             */
-/*   Updated: 2024/04/29 02:44:14 by fvoicu           ###   ########.fr       */
+/*   Updated: 2024/05/16 02:29:30 by fvoicu           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,6 @@
 # define RESET "\033[0m"
 
 class Brain {
-
  private:
     std::string _ideas[100];
 
