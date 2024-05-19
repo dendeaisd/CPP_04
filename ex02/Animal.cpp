@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Animal.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fvoicu <fvoicu@student.42heilbronn.de>     +#+  +:+       +#+        */
+/*   By: fvoicu <fvoicu@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/28 20:10:50 by fvoicu            #+#    #+#             */
-/*   Updated: 2024/04/29 03:17:32 by fvoicu           ###   ########.fr       */
+/*   Updated: 2024/05/19 17:35:46 by fvoicu           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,12 +17,12 @@ Animal::Animal() : _type("Animal") {
             << RESET << std::endl;
 }
 
-Animal::Animal(const Animal &other) : _type(other._type){
+Animal::Animal(const Animal& other) : _type(other._type){
   std::cout << GREEN << "Animal copy constructor called" 
             << RESET << std::endl;
 }
 
-Animal& Animal::operator=(const Animal &other) {
+Animal& Animal::operator=(const Animal& other) {
   if (this != &other)
     _type = other._type;
   std::cout << GREEN << "Animal assignation operator called" 

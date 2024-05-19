@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fvoicu <fvoicu@student.42heilbronn.de>     +#+  +:+       +#+        */
+/*   By: fvoicu <fvoicu@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/28 20:20:04 by fvoicu            #+#    #+#             */
-/*   Updated: 2024/04/29 02:55:35 by fvoicu           ###   ########.fr       */
+/*   Updated: 2024/05/19 14:23:01 by fvoicu           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,5 +37,10 @@ int main() {
       delete animals[i];  // This should trigger Brain destructor via Dog/Cat destructors
   }
 
-  return 0;
+/*Subject test*/
+  // const Animal* j = new Dog();
+  // const Animal* i = new Cat();
+  // delete j;//should not create a leak
+  // delete i;
+  // return 0;
 }

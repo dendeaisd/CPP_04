@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Animal.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fvoicu <fvoicu@student.42heilbronn.de>     +#+  +:+       +#+        */
+/*   By: fvoicu <fvoicu@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/28 20:10:50 by fvoicu            #+#    #+#             */
-/*   Updated: 2024/04/29 18:40:14 by fvoicu           ###   ########.fr       */
+/*   Updated: 2024/05/19 19:59:41 by fvoicu           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,6 @@ std::string Animal::getType() const {
 }
 
 void Animal::makeSound() const {
-  system("say rooar");
   std::cout << GREEN << "* random(not so random) animal sound🙊 *" 
             << RESET << std::endl;
 }

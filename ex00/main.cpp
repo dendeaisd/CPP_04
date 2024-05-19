@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fvoicu <fvoicu@student.42heilbronn.de>     +#+  +:+       +#+        */
+/*   By: fvoicu <fvoicu@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/28 20:20:04 by fvoicu            #+#    #+#             */
-/*   Updated: 2024/04/29 18:41:47 by fvoicu           ###   ########.fr       */
+/*   Updated: 2024/05/19 14:17:32 by fvoicu           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,14 +48,14 @@ int main()
   delete j;
   delete i;
 
-  // /*Subject tests for Worng*/
-  // const WrongAnimal* meta = new WrongAnimal();
-  // const WrongAnimal* i = new WrongCat();
-  // std::cout << i->getType() << " " << std::endl;
-  // i->makeSound();
-  // meta->makeSound();
-  // delete meta;
-  // delete i;
+  /*Subject tests for Wrong*/
+  const WrongAnimal* meta = new WrongAnimal();
+  const WrongAnimal* i = new WrongCat();
+  std::cout << i->getType() << " " << std::endl;
+  i->makeSound();
+  meta->makeSound();
+  delete meta;
+  delete i;
 
   return 0;
 }
