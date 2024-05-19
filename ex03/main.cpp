@@ -6,7 +6,7 @@
 /*   By: fvoicu <fvoicu@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/19 18:15:36 by fvoicu            #+#    #+#             */
-/*   Updated: 2024/05/19 21:14:50 by fvoicu           ###   ########.fr       */
+/*   Updated: 2024/05/19 21:26:45 by fvoicu           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,13 +17,13 @@
 #include "Character.hpp"
 
 void testMateriaUsage(ICharacter* user, ICharacter* target, int idx) {
-    user->use(idx, *target);
+  user->use(idx, *target);
 }
 
 void testMateriaInventory(ICharacter* character) {
-    for (int i = 0; i < 4; ++i) {
-        testMateriaUsage(character, character, i);
-    }
+  for (int i = 0; i < 4; ++i) {
+    testMateriaUsage(character, character, i);
+  }
 }
 
 void testMateriaSource(IMateriaSource* src) {
@@ -44,19 +44,12 @@ void testMateriaSource(IMateriaSource* src) {
     std::cout << "Failed to create Materia of type: cure" << std::endl;
   }
   delete tmp;
-    
-  // tmp = src->createMateria("unknown");
-  // if (tmp) {
-  //   std::cout << "Created Materia of type: " << tmp->getType() << std::endl;
-  // } else {
-  //   std::cout << "Failed to create Materia of type: unknown" << std::endl;
-  // }
-  // delete tmp;
 }
 
 int main()
 {
-  /*Subject test*/
+  /*Subject tests*/
+  std::cout << "Subject tests:" << std::endl;
   IMateriaSource* src = new MateriaSource();
   src->learnMateria(new Ice());
   src->learnMateria(new Cure());
@@ -79,32 +72,28 @@ int main()
   me->use(1, *alice);
   testMateriaInventory(me);
 
+  AMateria* tmp1;
+  AMateria* tmp2;
   // Equip more Materia
-  tmp = src->createMateria("ice");
+  tmp1 = src->createMateria("ice");
   me->equip(tmp);
-  tmp = src->createMateria("cure");
+  tmp2 = src->createMateria("cure");
   me->equip(tmp);
   testMateriaInventory(me);
 
-  AMateria* uneqMateria[2] = {NULL, NULL};
   // Unequip Materia
   me->unequip(2);
-  // uneqMateria[0] = me->_inventory[2];
   me->unequip(3);
-  // uneqMateria[1] = me->_inventory[3];
-  
-  
+ 
   testMateriaInventory(me);
-
-  // Test MateriaSource
   testMateriaSource(src);
   
   delete bob;
   delete alice;
   delete me;
   delete src;
-
-  delete uneqMateria[0];
-  delete uneqMateria[1];
+  
+  delete tmp1;
+  delete tmp2;
   return 0;
 }

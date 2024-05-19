@@ -6,7 +6,7 @@
 #    By: fvoicu <fvoicu@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/28 19:58:43 by fvoicu            #+#    #+#              #
-#    Updated: 2024/05/19 21:06:11 by fvoicu           ###   ########.fr        #
+#    Updated: 2024/05/19 21:27:58 by fvoicu           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -41,7 +41,7 @@ $(NAME)		: $(OBJ)
 	@./spin.sh
 	@printf "$(UP)$(BEGIN)$(CUT)Compiling $@...$(RESET)\n"
 	@$(CC) $(FLAGS) $(OBJ) -o $(NAME)
-	@printf "$(UP)$(BEGIN)$(CUT)$(CERULEAN)Let's get abstract!$(RESET)\n"
+	@printf "$(UP)$(BEGIN)$(CUT)$(CERULEAN)Materia materia materia!$(RESET)\n"
 	@./progressbar.sh
 
 %.o				: %.cpp
