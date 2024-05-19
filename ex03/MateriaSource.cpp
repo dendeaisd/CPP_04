@@ -6,7 +6,7 @@
 /*   By: fvoicu <fvoicu@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/19 19:19:44 by fvoicu            #+#    #+#             */
-/*   Updated: 2024/05/19 19:43:39 by fvoicu           ###   ########.fr       */
+/*   Updated: 2024/05/19 20:56:28 by fvoicu           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 MateriaSource::MateriaSource() {
   for(int i = 0; i < 4; i++) {
-    _materias[i] = nullptr; 
+    _materias[i] = NULL; 
   }
 }
 
@@ -37,8 +37,8 @@ MateriaSource::~MateriaSource() {
 void MateriaSource::learnMateria(AMateria* m) {
   if (!m) return;
   for(int i = 0; i < 4; i++) {
-    if (_materias[i] == nullptr) {
-      _materias[i] = m->clone();
+    if (_materias[i] == NULL) {
+      _materias[i] = m;
       return;
     }
   }
@@ -50,22 +50,22 @@ AMateria*  MateriaSource::createMateria(std::string const& type) {
       return _materias[i]->clone();
     }
   }
-  return nullptr;
+  return NULL;
 }
 
 void MateriaSource::deleteMaterias() {
   for(int i = 0; i < 4; i++) {
     delete _materias[i];
-    _materias[i] = nullptr;
+    _materias[i] = NULL;
   }
 }
 
 void MateriaSource::copyMaterias(const MateriaSource& other) {
   for(int i = 0; i < 4; i++) {
-    if (other._materias[i] !=  nullptr) {
+    if (other._materias[i] !=  NULL) {
       _materias[i] = other._materias[i]->clone();
     } else {
-      _materias[i] = nullptr;
+      _materias[i] = NULL;
     }
   }
 }

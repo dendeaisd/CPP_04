@@ -6,13 +6,13 @@
 /*   By: fvoicu <fvoicu@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/19 17:20:05 by fvoicu            #+#    #+#             */
-/*   Updated: 2024/05/19 19:54:17 by fvoicu           ###   ########.fr       */
+/*   Updated: 2024/05/19 20:52:37 by fvoicu           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "AMateria.hpp"
 
-AMateria::AMateria() : _type("") {};
+AMateria::AMateria() : _type(NULL) {};
 
 AMateria::AMateria(std::string const& type) : _type(type) {};
 
