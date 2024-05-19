@@ -6,14 +6,14 @@
 #    By: fvoicu <fvoicu@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/28 19:58:43 by fvoicu            #+#    #+#              #
-#    Updated: 2024/05/16 02:31:42 by fvoicu           ###   ########.fr        #
+#    Updated: 2024/05/19 19:44:08 by fvoicu           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME			:= AbstractClass
 CC				:= c++
 FLAGS			:= -Wall -Wextra -Werror -std=c++98
-SRC				:= main.cpp
+SRC				:= main.cpp AMateria.cpp Ice.cpp Cure.cpp Character.cpp MateriaSource.cpp
 OBJ				:= $(SRC:.cpp=.o)
 
 # Colors
